@@ -2,6 +2,29 @@
 
 A comprehensive retail analytics solution for sales forecasting and inventory optimization using machine learning.
 
+## 🏗️ Package Structure
+
+The SmartRetail Analytics package is organized into the following modules:
+
+```
+smartretail_analytics/
+├── __init__.py           # Package initialization
+├── data/                 # Data handling
+│   ├── __init__.py
+│   ├── collection.py     # Data collection and loading
+│   └── preprocessing.py  # Data cleaning and transformation
+├── features/             # Feature engineering
+│   ├── __init__.py
+│   └── feature_engineering.py  # Feature creation and transformation
+├── models/               # Model training and prediction
+│   ├── __init__.py
+│   ├── train.py          # Model training utilities
+│   └── predict.py        # Model prediction utilities
+└── visualization/        # Data visualization
+    ├── __init__.py
+    └── plots.py          # Plotting utilities
+```
+
 ## 📋 Project Structure
 
 ```
@@ -135,6 +158,31 @@ The sales forecasting model is built using:
 - **Algorithm**: Linear Regression
 - **Features**: Historical sales data, product categories, promotions
 - **Performance**: 98.4% revenue accuracy
+
+## 🚀 Example Workflow
+
+The `examples/` directory contains a complete example workflow demonstrating how to use the SmartRetail Analytics package:
+
+1. **Data Collection**: Load and preprocess retail data
+2. **Feature Engineering**: Create meaningful features for modeling
+3. **Model Training**: Train and evaluate machine learning models
+4. **Prediction**: Make predictions using the trained model
+5. **Visualization**: Create insightful visualizations
+
+To run the example:
+
+```bash
+# Navigate to the examples directory
+cd examples
+
+# Install example dependencies
+pip install -r requirements.txt
+
+# Run the example workflow
+python example_workflow.py
+```
+
+This will execute the workflow and save visualizations to the `output` directory.
 
 ## 📝 License
 
