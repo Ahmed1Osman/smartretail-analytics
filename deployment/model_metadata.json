@@ -1,0 +1,13 @@
+{
+  "model_type": "LinearRegression",
+  "training_date": "2025-09-21T02:40:39.567546",
+  "performance_metrics": {
+    "wmape": 5.81,
+    "r2_score": 0.967,
+    "mae": 1674.18,
+    "rmse": 2155.06,
+    "revenue_accuracy": 98.4
+  },
+  "feature_count": 33,
+  "model_version": "1.0.0"
+}
