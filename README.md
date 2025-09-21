@@ -63,9 +63,41 @@ uvicorn main:app --reload
 
 The API will be available at `http://localhost:8000`
 
-### API Documentation
-- Swagger UI: `http://localhost:8000/docs`
-- ReDoc: `http://localhost:8000/redoc`
+## 📚 API Documentation
+
+### Interactive API Documentation
+- **Swagger UI**: `http://localhost:8000/docs`
+- **ReDoc**: `http://localhost:8000/redoc`
+
+### API Endpoints
+
+#### 1. Health Check
+```
+GET /health
+```
+Check if the API is running.
+
+#### 2. Get Model Information
+```
+GET /model/info
+```
+Get information about the deployed model.
+
+#### 3. Make Predictions
+```
+POST /predict
+```
+Make sales predictions using the trained model.
+
+### API Screenshots
+
+#### Local Development
+![Local API Documentation](docs/Screenshot_21-9-2025_7814_localhost.jpeg)
+*Local API documentation and testing interface*
+
+#### Production Deployment
+![Production API](docs/Screenshot_21-9-2025_7745_smartretailapi-demo.switzerlandnorth.azurecontainer.io.jpeg)
+*Production API deployment on Azure Container Instances*
 
 ## 🐳 Docker Deployment
 
